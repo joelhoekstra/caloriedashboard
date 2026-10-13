@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nutrition</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Nutrition">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#10191c">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="icon" href="icon.png">
+<style>
+  html,body{height:100%;margin:0;background:#10191c;color:#e8f0ee;font-family:system-ui,sans-serif}
+  body{display:flex;align-items:center;justify-content:center}
+</style>
+</head>
+<body>
+<p>Opening dashboard… <a id="go" style="color:#6f9be0" href="#">Tap here if nothing happens</a></p>
+<script>
+  // Paste your Apps Script web app URL (ends in /exec) between the quotes:
+  var TARGET = "PASTE_YOUR_EXEC_URL_HERE";
+  document.getElementById("go").href = TARGET;
+  if (TARGET.indexOf("http") === 0) { location.replace(TARGET); }
+</script>
+</body>
+</html>
